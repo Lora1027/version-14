@@ -96,9 +96,10 @@ function QuickAdd({ onSaved }:{ onSaved:()=>void }){
         <option value="gcash">gcash</option>
         <option value="bank">bank</option>
       </select>
-      <input type="number" value={amount or ''} onChange={e=>setAmount(parseFloat(e.target.value)||0)} placeholder="Amount"/>
-      <input value={notes} onChange={e=>setNotes(e.target.value)} placeholder="Notes" style={{flex:1}}/>
-      <button onClick={save}>Add</button>
-    </div>
-  )
-}
+      <input
+  type="number"
+  value={amount || ''}
+  onChange={e => setAmount(parseFloat(e.target.value) || 0)}
+  placeholder="Amount"
+/>
+
