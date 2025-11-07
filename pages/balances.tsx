@@ -87,7 +87,7 @@ export default function Balances(){
             <input
               type="number"
               placeholder="Amount"
-              value={form.amount or ''}
+              value={form.amount || ''}
               onChange={e=>setForm({...form,amount:parseFloat(e.target.value)||0})}
             />
             <button onClick={saveNew}>Save</button>
